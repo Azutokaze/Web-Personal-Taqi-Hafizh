@@ -1,0 +1,45 @@
+/* Custom Professional Styling */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #690404;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #565658;
+}
+::-webkit-scrollbar-thumb {
+    background: #6f0808;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #910000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#home h1, #home h2, #home p {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Hover Effects */
+.group:hover img {
+    transform: translateY(-5px);
+}
+/* Input Focus Effect */
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+    transition: 0.3s;
+}
+
+form input, form textarea {
+    transition: all 0.3s ease-in-out;
+}
